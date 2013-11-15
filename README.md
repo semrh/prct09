@@ -27,8 +27,9 @@ Alumnos:
 
 ##Clases que contendrá la práctica
 
-    En primer lugar, existirá una clase base "Matriz" abstracta, de la que heredarán "Dispera" y "Densa", y en la que se encontrarán los métodos comunes a ambas
-    subclases, que según el porcentaje de elementos que sean igual a cero, se tratará de un tipo de matriz u otro.
+    En primer lugar, existirá una clase base "Matriz" abstracta, de la que heredarán "Dispera" y "Densa", 
+    y en la que se encontrarán los métodos comunes a ambas subclases, que según el porcentaje de
+    elementos que sean igual a cero, se tratará de un tipo de matriz u otro.
     
     
 TODO: Write a gem description
