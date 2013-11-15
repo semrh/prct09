@@ -1,3 +1,4 @@
 source 'https://rubygems.org'
 
-#GEMAS A AÑADIR
+# Specify your gem's dependencies in Practica9.gemspec
+gemspec
