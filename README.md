@@ -1,5 +1,36 @@
-# Practica9
+[Práctica 9 de LPP](http://campusvirtual.ull.es/1314/mod/assign/view.php?id=95635)
+=================
 
+Alumnos:
+  - [José Alexander Delgado Hernández](http://campusvirtual.ull.es/1314/user/view.php?id=5990&course=1102) ([alu0100596403@ull.edu.es](mailto:alu0100596403@ull.edu.es))
+  - [Sem Ramos Herrera](http://campusvirtual.ull.es/1314/user/view.php?id=2455&course=1102) ([alu0100603194@ull.edu.es](mailto:alu0100603194@ull.edu.es))
+
+=================
+
+##Jerarquía de la práctica
+    .
+    ├── bin
+    │   └── Practica9
+    ├── Gemfile
+    ├── .git
+    ├── .gitignore
+    ├── lib
+    │   ├── Practica9
+    │   │   └── version.rb
+    │   └── Practica9.rb
+    ├── LICENSE.txt
+    ├── Practica9.gemspec
+    ├── Rakefile
+    ├── README.md
+    ├── .README.md.kate-swp
+    └── .travis.yml
+
+##Clases que contendrá la práctica
+
+    En primer lugar, existirá una clase base "Matriz" abstracta, de la que heredarán "Dispera" y "Densa", y en la que se encontrarán los métodos comunes a ambas
+    subclases, que según el porcentaje de elementos que sean igual a cero, se tratará de un tipo de matriz u otro.
+    
+    
 TODO: Write a gem description
 
 ## Installation
