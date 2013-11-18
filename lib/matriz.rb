@@ -1,11 +1,12 @@
 #! /usr/bin/ruby
 
 require "fraccion.rb"
+require "p9lppt13/version"
 
 # PRACTICA 9
 # Codigo de matriz
 
-module p9lppt13
+module P9lppt13
 	class Matriz
 	
 		attr_reader :nfil, :ncol
@@ -44,16 +45,16 @@ module p9lppt13
 				puts "No se pueden sumar las matrices"
 			else
 				elemento = Array.new(0)
-				for i in 0...filas do
+				for i in 0...filas
 					fila = Array.new(0)
-					for j in 0...colum do
+					for j in 0...colum
 						fila << pos[i][j] + other.pos[i][j]
 					end
 					elemento << fila
 				end
 			end
 			Matriz.new(@nfil, @ncol, elemento)
-		end
+		end	
 		
 		# Metodo para restar dos matrices
 		def -(other)
@@ -61,9 +62,9 @@ module p9lppt13
 				puts "No se pueden restar las matrices"
 			else
 				elemento = Array.new(0)
-				for i in 0...filas do
+				for i in 0...filas
 					fila = Array.new(0)
-					for j in 0...colum do
+					for j in 0...colum
 						fila << pos[i][j] - other.pos[i][j]
 					end
 					elemento << fila
@@ -78,11 +79,11 @@ module p9lppt13
 				puts "No se pueden multiplicarr las matrices"
 			else
 				elemento = Array.new(0)
-				for i in 0...nfil do
+				for i in 0...nfil
 					fila = Array.new(0)
-					for j in 0...other.ncol do
+					for j in 0...other.ncol
 						aux = 0
-						for k in 0...ncol do
+						for k in 0...ncol
 							aux += pos[i][k] * other.pos[k][j]
 						end
 						fila << aux
@@ -99,12 +100,12 @@ module p9lppt13
 				puts "No se pueden multiplicarr las matrices"
 			else
 				elemento = Array.new(0)
-				for i in 0...nfil do
+				for i in 0...nfil
 					fila = Array.new(0)
-					for j in 0...other.ncol do
+					for j in 0...other.ncol
 						aux = Fraccion.new(1,1)
 						aux = aux - aux
-						for k in 0...ncol do
+						for k in 0...ncol
 							aux += pos[i][k] * other.pos[k][j]
 						end
 						fila << aux
@@ -131,9 +132,9 @@ module p9lppt13
 		# Metodo para hallar la traspuesta de una matriz
 		def trasponer
 			elemento = Array.new(0)
-			for i in 0...colum do
+			for i in 0...colum
 				fila = Array.new(0)
-				for j in 0...filas do
+				for j in 0...filas
 					fila << pos[j][i]
 				end
 				elemento << fila
@@ -145,8 +146,8 @@ module p9lppt13
 		# Metodo para convertir la matriz en un vector
 		def vectorizar
 			aux = Array.new(0)
-			for i in 0...colum do
-				for j in 0...filas do
+			for i in 0...colum
+				for j in 0...filas
 					aux << pos[i][j]
 				end
 			end
@@ -154,5 +155,6 @@ module p9lppt13
 		end
 		
 	end
+	
 
 end
