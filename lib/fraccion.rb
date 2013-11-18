@@ -1,4 +1,4 @@
-require "./lib/gcd.rb"
+require "gcd.rb"
 
 #############################################################
 # Clase Fraccion de la practica #7 de LPP                   #
