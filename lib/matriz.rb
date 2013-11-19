@@ -156,5 +156,27 @@ module P9lppt13
 		
 	end
 	
+	# Clase de Matrices Densas
+	class Densa < Matriz
+		
+		attr_reader :pos
+		
+		def initialize(nfil, ncol, pos)
+			@pos = Array.new(pos)
+			super
+		end
+		
+	end
+	
+	# Clase de Vectores dispersos
+	class VectorDisperso
+	end
+	
+	# Clase de Matrices Dispersas
+	class Dispersa < Matriz
+	
+	end
+	
+	
 
 end
